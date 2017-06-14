@@ -1,9 +1,9 @@
-" noctu.vim - Vim color scheme for 16-color terminals
+" Interrobang - Vim color scheme for 16-color terminals
+" A modified version of noctu
 " ------------------------------------------------------------
 " Author(s):
 "   - Noah Frederick (http://noahfrederick.com/)
 "   - Luke Mitchell
-" Version:  1.8.0
 " ------------------------------------------------------------
 
 " Scheme setup
@@ -14,7 +14,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name="noctu"
+let colors_name="interrobang"
 
 " Vim UI
 hi Cursor              ctermfg=7     ctermbg=1
@@ -48,7 +48,7 @@ hi DiffAdd             ctermfg=0     ctermbg=2
 hi DiffChange          ctermfg=0     ctermbg=3
 hi DiffDelete          ctermfg=0     ctermbg=1
 hi DiffText            ctermfg=0     ctermbg=11    cterm=bold
-hi User1               ctermfg=15    ctermbg=5
+hi User1               ctermfg=1     ctermbg=0
 hi User2               ctermfg=15    ctermbg=8
 hi User3               ctermfg=15    ctermbg=3
 hi User4               ctermfg=15    ctermbg=0
@@ -157,6 +157,29 @@ hi! link VimwikiHeaderChar  markdownHeadingDelimiter
 hi! link VimwikiList        markdownListMarker
 hi! link VimwikiCode        markdownCode
 hi! link VimwikiCodeChar    markdownCodeDelimiter
+
+" Signify
+hi SignifySignAdd ctermfg=2
+hi SignifySignDelete ctermfg=1
+hi SignifySignChange ctermfg=3
+
+" Sneak
+hi Sneak ctermbg=1
+
+" FZF
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " Help
 hi! link helpExample         String
