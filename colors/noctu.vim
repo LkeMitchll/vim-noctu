@@ -119,14 +119,6 @@ hi! link javaScript        Normal
 hi! link javaScriptBraces  Delimiter
 
 "}}}
-" PHP {{{
-hi phpSpecialFunction    ctermfg=5
-hi phpIdentifier         ctermfg=11
-hi! link phpVarSelector  phpIdentifier
-hi! link phpHereDoc      String
-hi! link phpDefine       Statement
-
-"}}}
 " Markdown {{{
 hi! link markdownHeadingRule        NonText
 hi! link markdownHeadingDelimiter   markdownHeadingRule
@@ -168,16 +160,6 @@ hi! link vimContinue  Delimiter
 hi! link vimHiAttrib  Constant
 
 "}}}
-" LESS {{{
-hi lessVariable             ctermfg=11
-hi! link lessVariableValue  Normal
-
-"}}}
-" NERDTree {{{
-hi! link NERDTreeHelp      Comment
-hi! link NERDTreeExecFile  String
-
-"}}}
 " Vimwiki {{{
 hi! link VimwikiHeaderChar  markdownHeadingDelimiter
 hi! link VimwikiList        markdownListMarker
@@ -194,32 +176,9 @@ hi! link helpHyperTextJump   Underlined
 hi! link helpURL             Underlined
 
 "}}}
-" CtrlP {{{
-hi! link CtrlPMatch    String
-hi! link CtrlPLinePre  Comment
-
-"}}}
-" Mustache {{{
-hi mustacheSection           ctermfg=14  cterm=bold
-hi mustacheMarker            ctermfg=6
-hi mustacheVariable          ctermfg=14
-hi mustacheVariableUnescape  ctermfg=9
-hi mustachePartial           ctermfg=13
-
-"}}}
 " Shell {{{
 hi shDerefSimple     ctermfg=11
 hi! link shDerefVar  shDerefSimple
-
-"}}}
-" Syntastic {{{
-hi SyntasticWarningSign  ctermfg=3   ctermbg=NONE
-hi SyntasticErrorSign    ctermfg=1   ctermbg=NONE
-
-"}}}
-" Netrw {{{
-hi netrwExe       ctermfg=9
-hi netrwClassify  ctermfg=8  cterm=bold
 
 "}}}
 
