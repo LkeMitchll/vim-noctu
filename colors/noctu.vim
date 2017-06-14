@@ -1,10 +1,12 @@
 " noctu.vim - Vim color scheme for 16-color terminals
-" --------------------------------------------------------------
-" Author:   Noah Frederick (http://noahfrederick.com/)
-" Version:  1.7.0
-" --------------------------------------------------------------
+" ------------------------------------------------------------
+" Author(s):
+"   - Noah Frederick (http://noahfrederick.com/)
+"   - Luke Mitchell
+" Version:  1.8.0
+" ------------------------------------------------------------
 
-" Scheme setup {{{
+" Scheme setup
 set background=dark
 hi! clear
 
@@ -14,8 +16,7 @@ endif
 
 let colors_name="noctu"
 
-"}}}
-" Vim UI {{{
+" Vim UI
 hi Cursor              ctermfg=7     ctermbg=1
 hi CursorLine          ctermbg=0     cterm=NONE
 hi MatchParen          ctermfg=7     ctermbg=NONE  cterm=underline
@@ -67,8 +68,7 @@ hi! link ModeMsg       MoreMsg
 hi! link TabLineFill   StatusLineNC
 hi! link SpecialKey    NonText
 
-"}}}
-" Generic syntax {{{
+" Generic syntax
 hi Delimiter       ctermfg=7
 hi Comment         ctermfg=8
 hi Underlined      ctermfg=4   cterm=underline
@@ -88,8 +88,7 @@ hi! link Operator  Delimiter
 hi! link PreProc   Delimiter
 hi! link Error     ErrorMsg
 
-"}}}
-" HTML {{{
+" HTML
 hi htmlTagName              ctermfg=2
 hi htmlTag                  ctermfg=2
 hi htmlArg                  ctermfg=10
@@ -104,8 +103,7 @@ hi htmlBoldUnderlineItalic  cterm=bold,underline
 hi! link htmlLink           Underlined
 hi! link htmlEndTag         htmlTag
 
-"}}}
-" XML {{{
+" XML
 hi xmlTagName       ctermfg=4
 hi xmlTag           ctermfg=12
 hi! link xmlString  xmlTagName
@@ -113,13 +111,11 @@ hi! link xmlAttrib  xmlTag
 hi! link xmlEndTag  xmlTag
 hi! link xmlEqual   xmlTag
 
-"}}}
-" JavaScript {{{
+" JavaScript
 hi! link javaScript        Normal
 hi! link javaScriptBraces  Delimiter
 
-"}}}
-" Markdown {{{
+" Markdown
 hi! link markdownHeadingRule        NonText
 hi! link markdownHeadingDelimiter   markdownHeadingRule
 hi! link markdownLinkDelimiter      Delimiter
@@ -133,16 +129,14 @@ hi markdownCode                     cterm=bold
 hi markdownBold                     cterm=bold
 hi markdownItalic                   cterm=underline
 
-"}}}
-" Ruby {{{
+" Ruby
 hi! link rubyDefine                 Statement
 hi! link rubyLocalVariableOrMethod  Identifier
 hi! link rubyConstant               Constant
 hi! link rubyInstanceVariable       Number
 hi! link rubyStringDelimiter        rubyString
 
-"}}}
-" Git {{{
+" Git
 hi gitCommitBranch               ctermfg=3
 hi gitCommitSelectedType         ctermfg=10
 hi gitCommitSelectedFile         ctermfg=2
@@ -153,21 +147,18 @@ hi! link gitCommitUntrackedFile  gitCommitUnmergedFile
 hi! link gitCommitDiscardedType  gitCommitUnmergedType
 hi! link gitCommitDiscardedFile  gitCommitUnmergedFile
 
-"}}}
-" Vim {{{
+" Vim
 hi! link vimSetSep    Delimiter
 hi! link vimContinue  Delimiter
 hi! link vimHiAttrib  Constant
 
-"}}}
-" Vimwiki {{{
+" Vimwiki
 hi! link VimwikiHeaderChar  markdownHeadingDelimiter
 hi! link VimwikiList        markdownListMarker
 hi! link VimwikiCode        markdownCode
 hi! link VimwikiCodeChar    markdownCodeDelimiter
 
-"}}}
-" Help {{{
+" Help
 hi! link helpExample         String
 hi! link helpHeadline        Title
 hi! link helpSectionDelim    Comment
@@ -175,11 +166,8 @@ hi! link helpHyperTextEntry  Statement
 hi! link helpHyperTextJump   Underlined
 hi! link helpURL             Underlined
 
-"}}}
-" Shell {{{
+" Shell
 hi shDerefSimple     ctermfg=11
 hi! link shDerefVar  shDerefSimple
-
-"}}}
 
 " vim: fdm=marker:sw=2:sts=2:et
