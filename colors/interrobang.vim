@@ -158,10 +158,23 @@ hi! link VimwikiList        markdownListMarker
 hi! link VimwikiCode        markdownCode
 hi! link VimwikiCodeChar    markdownCodeDelimiter
 
+" Help
+hi! link helpExample         String
+hi! link helpHeadline        Title
+hi! link helpSectionDelim    Comment
+hi! link helpHyperTextEntry  Statement
+hi! link helpHyperTextJump   Underlined
+hi! link helpURL             Underlined
+
+" Shell
+hi shDerefSimple     ctermfg=11
+hi! link shDerefVar  shDerefSimple
+
+" Plugins
 " Signify
-hi SignifySignAdd ctermfg=2
-hi SignifySignDelete ctermfg=1
-hi SignifySignChange ctermfg=3
+hi SignifySignAdd     ctermfg=2
+hi SignifySignDelete  ctermfg=1
+hi SignifySignChange  ctermfg=3
 
 " Sneak
 hi Sneak ctermbg=1
@@ -180,17 +193,5 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-
-" Help
-hi! link helpExample         String
-hi! link helpHeadline        Title
-hi! link helpSectionDelim    Comment
-hi! link helpHyperTextEntry  Statement
-hi! link helpHyperTextJump   Underlined
-hi! link helpURL             Underlined
-
-" Shell
-hi shDerefSimple     ctermfg=11
-hi! link shDerefVar  shDerefSimple
 
 " vim: fdm=marker:sw=2:sts=2:et
