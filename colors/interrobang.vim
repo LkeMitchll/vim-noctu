@@ -180,6 +180,11 @@ hi SignifySignChange  ctermfg=3
 hi Sneak ctermbg=1
 
 " FZF
+function! s:fzf_statusline()
+  setlocal statusline=%#fzf1#\ fzf
+endfunction
+autocmd! User FzfStatusLine call <SID>fzf_statusline()
+
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
