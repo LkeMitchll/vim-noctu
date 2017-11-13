@@ -171,11 +171,6 @@ hi shDerefSimple     ctermfg=11
 hi! link shDerefVar  shDerefSimple
 
 " Plugins
-" Signify
-hi SignifySignAdd     ctermfg=2
-hi SignifySignDelete  ctermfg=1
-hi SignifySignChange  ctermfg=3
-
 " Sneak
 hi Sneak ctermbg=1
 
@@ -198,5 +193,3 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-
-" vim: fdm=marker:sw=2:sts=2:et
