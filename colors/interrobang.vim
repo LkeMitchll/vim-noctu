@@ -70,27 +70,27 @@ hi! link SpecialKey    NonText
 
 " Generic syntax
 hi Delimiter       ctermfg=7
-hi Comment         ctermfg=8 cterm=italic
+hi Comment         ctermfg=8   cterm=italic
 hi Underlined      ctermfg=4   cterm=underline
 hi Type            ctermfg=4
 hi String          ctermfg=9
-hi Keyword         ctermfg=2
-hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
-hi Function        ctermfg=4
+hi Keyword         ctermfg=2   cterm=bold
+hi Todo            ctermfg=15  ctermbg=NONE cterm=bold,underline
+hi Function        ctermfg=9   cterm=bold
 hi Identifier      ctermfg=7   cterm=NONE
 hi Statement       ctermfg=2   cterm=bold
 hi Constant        ctermfg=13
 hi Number          ctermfg=12
 hi Boolean         ctermfg=4
 hi Special         ctermfg=13
-hi Ignore          ctermfg=0
+hi Ignore          ctermfg=0   cterm=italic
 hi! link Operator  Delimiter
 hi! link PreProc   Delimiter
 hi! link Error     ErrorMsg
 
 " HTML
-hi htmlTagName              ctermfg=2
-hi htmlTag                  ctermfg=2
+hi htmlTagName              ctermfg=8
+hi htmlTag                  ctermfg=7
 hi htmlArg                  ctermfg=10
 hi htmlH1                   cterm=bold
 hi htmlBold                 cterm=bold
@@ -103,17 +103,28 @@ hi htmlBoldUnderlineItalic  cterm=bold,underline
 hi! link htmlLink           Underlined
 hi! link htmlEndTag         htmlTag
 
-" XML
-hi xmlTagName       ctermfg=4
-hi xmlTag           ctermfg=12
-hi! link xmlString  xmlTagName
-hi! link xmlAttrib  xmlTag
-hi! link xmlEndTag  xmlTag
+" XML/JSX
+hi! link xmlTagName htmlTagName
+hi! link xmlEndTagName  htmlTagName
+hi! link xmlTag     htmlTag
+hi! link xmlString  htmlString
+hi! link xmlAttrib  htmlArg
 hi! link xmlEqual   xmlTag
+
+" CSS/SCSS
+hi cssClassName       ctermfg=11
+hi cssClassNameDot    ctermfg=11 cterm=bold
+hi cssBraces          ctermfg=7
+hi cssIncludeKeyword  ctermfg=8
+hi! link scssSelectorName cssClassName
+hi! link scssSelectorChar cssClassNameDot
+hi scssDefinition ctermfg=7
+hi scssVariable ctermfg=2
 
 " JavaScript
 hi! link javaScript        Normal
 hi! link javaScriptBraces  Delimiter
+hi! jsClassDefinition ctermfg=11
 
 " Markdown
 hi! link markdownHeadingRule        NonText
@@ -172,7 +183,7 @@ hi! link shDerefVar  shDerefSimple
 
 " Plugins
 " Sneak
-hi Sneak ctermbg=1
+hi Sneak ctermbg=3 ctermfg=0
 
 " FZF
 function! s:fzf_statusline()
@@ -193,3 +204,8 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" WTF syntax is this!?
+map <F10> :echo "hi => " . synIDattr(synID(line("."),col("."),1),"name") . " \| trans => "
+  \ . synIDattr(synID(line("."),col("."),0),"name") . " \| lo => "
+  \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
