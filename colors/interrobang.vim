@@ -185,6 +185,12 @@ hi! link shDerefVar  shDerefSimple
 " Sneak
 hi Sneak ctermbg=3 ctermfg=0
 
+" Gina
+hi! diffLine ctermfg=8
+hi! diffFile ctermfg=3
+hi! diffAdded ctermfg=2
+hi! diffRemoved ctermfg=1
+
 " FZF
 function! s:fzf_statusline()
   setlocal statusline=%#fzf1#\ fzf
