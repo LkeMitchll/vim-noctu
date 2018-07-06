@@ -106,7 +106,8 @@ hi! link htmlEndTag         htmlTag
 " XML/JSX
 hi! link xmlTagName htmlTagName
 hi! link xmlEndTagName  htmlTagName
-hi! link xmlTag     htmlTag
+hi! link xmlTag     htmlTagName
+hi! link xmlEndTag     htmlTagName
 hi! link xmlString  htmlString
 hi! link xmlAttrib  htmlArg
 hi! link xmlEqual   xmlTag
@@ -124,6 +125,8 @@ hi scssVariable ctermfg=2
 " JavaScript
 hi! link javaScript        Normal
 hi! link javaScriptBraces  Delimiter
+hi  jsImport ctermfg=2
+hi! link jsExport jsImport
 hi! jsClassDefinition ctermfg=11
 
 " Markdown
