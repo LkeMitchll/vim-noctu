@@ -217,6 +217,14 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" Allow completion of nested filetypes
+" Using: Shougo/context_filetype.vim
+if !exists('g:context_filetype#filetypes')
+  let g:context_filetype#filetypes = {}
+endif
+let g:context_filetype#filetypes["javascript.jsx"] =
+      \ [{'filetype' : 'css', 'start' : 'const \D*\`', 'end' : '`'}]
+
 " WTF syntax is this!?
 map <F10> :echo "hi => " . synIDattr(synID(line("."),col("."),1),"name") . " \| trans => "
   \ . synIDattr(synID(line("."),col("."),0),"name") . " \| lo => "
