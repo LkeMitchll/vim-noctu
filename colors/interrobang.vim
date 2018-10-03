@@ -111,14 +111,17 @@ hi! link xmlEndTag     htmlTagName
 hi! link xmlString  htmlString
 hi! link xmlAttrib  htmlArg
 hi! link xmlEqual   xmlTag
+hi jsTemplateBraces ctermfg=11
 
 " CSS/SCSS
 hi cssClassName       ctermfg=11
 hi cssClassNameDot    ctermfg=11 cterm=bold
+hi cssUnitDecorators  ctermfg=13
 hi cssBraces          ctermfg=7
 hi cssIncludeKeyword  ctermfg=8
 hi! link scssSelectorName cssClassName
 hi! link scssSelectorChar cssClassNameDot
+hi! link scssProperty cssTextProp
 hi scssDefinition ctermfg=7
 hi scssVariable ctermfg=2
 
