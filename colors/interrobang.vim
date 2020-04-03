@@ -119,6 +119,7 @@ hi cssClassNameDot    ctermfg=11 cterm=bold
 hi cssUnitDecorators  ctermfg=13
 hi cssBraces          ctermfg=7
 hi cssIncludeKeyword  ctermfg=8
+hi! link cssTagName cssClassName
 hi! link scssSelectorName cssClassName
 hi! link scssSelectorChar cssClassNameDot
 hi! link scssProperty cssTextProp
@@ -196,34 +197,6 @@ hi! diffLine ctermfg=8
 hi! diffFile ctermfg=3
 hi! diffAdded ctermfg=2
 hi! diffRemoved ctermfg=1
-
-" FZF
-function! s:fzf_statusline()
-  setlocal statusline=%#fzf1#\ fzf
-endfunction
-autocmd! User FzfStatusLine call <SID>fzf_statusline()
-
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
-
-" Allow completion of nested filetypes
-" Using: Shougo/context_filetype.vim
-if !exists('g:context_filetype#filetypes')
-  let g:context_filetype#filetypes = {}
-endif
-let g:context_filetype#filetypes["javascript.jsx"] =
-      \ [{'filetype' : 'css', 'start' : 'const \D*\`', 'end' : '`'}]
 
 " WTF syntax is this!?
 map <F10> :echo "hi => " . synIDattr(synID(line("."),col("."),1),"name") . " \| trans => "
