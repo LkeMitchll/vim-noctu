@@ -100,6 +100,7 @@ hi htmlBoldItalic           cterm=bold,underline
 hi htmlBoldUnderline        cterm=bold,underline
 hi htmlUnderlineItalic      cterm=underline
 hi htmlBoldUnderlineItalic  cterm=bold,underline
+hi htmlString               ctermfg=12
 hi! link htmlLink           Underlined
 hi! link htmlEndTag         htmlTag
 
@@ -112,6 +113,7 @@ hi! link xmlString  htmlString
 hi! link xmlAttrib  htmlArg
 hi! link xmlEqual   xmlTag
 hi jsTemplateBraces ctermfg=11
+hi jsString ctermfg=12
 
 " CSS/SCSS
 hi cssClassName       ctermfg=11
@@ -119,6 +121,7 @@ hi cssClassNameDot    ctermfg=11 cterm=bold
 hi cssUnitDecorators  ctermfg=13
 hi cssBraces          ctermfg=7
 hi cssIncludeKeyword  ctermfg=8
+hi cssFunctionName    ctermfg=8
 hi! link cssTagName cssClassName
 hi! link scssSelectorName cssClassName
 hi! link scssSelectorChar cssClassNameDot
@@ -132,6 +135,7 @@ hi! link javaScriptBraces  Delimiter
 hi  jsImport ctermfg=2
 hi! link jsExport jsImport
 hi! jsClassDefinition ctermfg=11
+hi! jsFuncCall ctermfg=13
 
 " Markdown
 hi! link markdownHeadingRule        NonText
