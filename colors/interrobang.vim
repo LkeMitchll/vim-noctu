@@ -36,10 +36,10 @@ hi Visual              ctermfg=0     ctermbg=12
 hi IncSearch           ctermfg=0     ctermbg=13    cterm=NONE
 hi Search              ctermfg=0     ctermbg=3
 hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
-hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=bold
+hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=italic
 hi VertSplit           ctermfg=0     ctermbg=0     cterm=NONE
 hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
-hi TabLineSel          ctermfg=7     ctermbg=0
+hi TabLineSel          ctermfg=7     ctermbg=0     cterm=italic
 hi Folded              ctermfg=3     ctermbg=0
 hi Directory           ctermfg=12
 hi Title               ctermfg=3     cterm=bold
@@ -132,6 +132,7 @@ hi! link javaScriptBraces  Delimiter
 hi  jsImport ctermfg=2
 hi! link jsExport jsImport
 hi! jsClassDefinition ctermfg=11
+hi! jsxComponentName ctermfg=11
 
 " Markdown
 hi! link markdownHeadingRule        NonText
@@ -145,7 +146,7 @@ hi! link markdownAutomaticLink      markdownLinkText
 hi! link markdownCodeBlock          String
 hi markdownCode                     cterm=bold
 hi markdownBold                     cterm=bold
-hi markdownItalic                   cterm=underline
+hi markdownItalic                   cterm=italic
 
 " Ruby
 hi! link rubyDefine                 Statement
@@ -185,12 +186,12 @@ hi! link helpHyperTextJump   Underlined
 hi! link helpURL             Underlined
 
 " Shell
-hi shDerefSimple     ctermfg=11
-hi! link shDerefVar  shDerefSimple
+hi shDerefSimple             ctermfg=11
+hi! link shDerefVar          shDerefSimple
 
 " Plugins
 " Sneak
-hi Sneak ctermbg=3 ctermfg=0
+hi Sneak                     ctermbg=3 ctermfg=0 cterm=italic
 
 " Gina
 hi! diffLine ctermfg=8
