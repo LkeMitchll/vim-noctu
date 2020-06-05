@@ -111,7 +111,19 @@ hi! link xmlEndTag     htmlTagName
 hi! link xmlString  htmlString
 hi! link xmlAttrib  htmlArg
 hi! link xmlEqual   xmlTag
-hi jsTemplateBraces ctermfg=11
+hi! jsxComponentName ctermfg=11
+hi! jsxExpressionBlock ctermfg=8
+
+" JavaScript
+hi! link javaScript        Normal
+hi! link javaScriptBraces  Delimiter
+hi  jsImport ctermfg=2
+hi! link jsExport jsImport
+hi! jsClassDefinition ctermfg=11
+hi! jsTemplateBraces ctermfg=11
+hi! jsObjectKey ctermfg=7
+hi! jsFuncCall ctermfg=5
+hi! jsBlock ctermfg=5
 
 " CSS/SCSS
 hi cssClassName       ctermfg=11
@@ -125,14 +137,6 @@ hi! link scssSelectorChar cssClassNameDot
 hi! link scssProperty cssTextProp
 hi scssDefinition ctermfg=7
 hi scssVariable ctermfg=2
-
-" JavaScript
-hi! link javaScript        Normal
-hi! link javaScriptBraces  Delimiter
-hi  jsImport ctermfg=2
-hi! link jsExport jsImport
-hi! jsClassDefinition ctermfg=11
-hi! jsxComponentName ctermfg=11
 
 " Markdown
 hi! link markdownHeadingRule        NonText
