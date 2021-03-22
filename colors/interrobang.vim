@@ -197,6 +197,12 @@ hi! link shDerefVar          shDerefSimple
 " Sneak
 hi Sneak                     ctermbg=3 ctermfg=0 cterm=italic
 
+" Gina
+hi! diffLine ctermfg=8
+hi! diffFile ctermfg=3
+hi! diffAdded ctermfg=2
+hi! diffRemoved ctermfg=1
+"
 " Telescope
 hi! TelescopeSelection       ctermbg=black ctermfg=white
 hi! TelescopeMatching        ctermfg=yellow cterm=underline
