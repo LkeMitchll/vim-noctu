@@ -197,6 +197,9 @@ hi! link shDerefVar          shDerefSimple
 " Sneak
 hi Sneak                     ctermbg=3 ctermfg=0 cterm=italic
 
+" Telescope
+hi! TelescopeSelection       ctermbg=black ctermfg=white
+hi! TelescopeMatching        ctermfg=yellow cterm=underline
 
 " WTF syntax is this!?
 map <F10> :echo "hi => " . synIDattr(synID(line("."),col("."),1),"name") . " \| trans => "
