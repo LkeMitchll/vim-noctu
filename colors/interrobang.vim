@@ -197,11 +197,6 @@ hi! link shDerefVar          shDerefSimple
 " Sneak
 hi Sneak                     ctermbg=3 ctermfg=0 cterm=italic
 
-" Gina
-hi! diffLine ctermfg=8
-hi! diffFile ctermfg=3
-hi! diffAdded ctermfg=2
-hi! diffRemoved ctermfg=1
 
 " WTF syntax is this!?
 map <F10> :echo "hi => " . synIDattr(synID(line("."),col("."),1),"name") . " \| trans => "
