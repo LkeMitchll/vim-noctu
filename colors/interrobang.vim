@@ -19,7 +19,7 @@ let colors_name="interrobang"
 " Vim UI
 hi Cursor              ctermfg=7     ctermbg=1
 hi CursorLine          ctermbg=0     cterm=NONE
-hi MatchParen          ctermfg=0     ctermbg=8
+hi MatchParen          ctermfg=0     ctermbg=3
 hi Pmenu               ctermfg=3     ctermbg=0
 hi PmenuThumb          ctermbg=3
 hi PmenuSBar           ctermbg=8
@@ -35,7 +35,7 @@ hi CursorLineNr        ctermfg=11    ctermbg=0
 hi Visual              ctermfg=0     ctermbg=12
 hi IncSearch           ctermfg=0     ctermbg=13    cterm=NONE
 hi Search              ctermfg=0     ctermbg=3
-hi StatusLine          ctermfg=7     ctermbg=0     cterm=bold
+hi StatusLine          ctermfg=4     ctermbg=0     cterm=bold
 hi StatusLineNC        ctermfg=8     ctermbg=0     cterm=italic
 hi VertSplit           ctermfg=0     ctermbg=0     cterm=NONE
 hi TabLine             ctermfg=8     ctermbg=0     cterm=NONE
